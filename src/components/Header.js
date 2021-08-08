@@ -1,10 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Image from 'next/image'
-import small from "../assets/small.svg"
+
 export default () => (
   <header className="Header-header">
-    <h1 className="Header-h1">I know my kitChen - blogaaa</h1>
+    <h1 className="Header-h1">nav</h1>
     
     <nav className="Header-nav">
       <NavLink

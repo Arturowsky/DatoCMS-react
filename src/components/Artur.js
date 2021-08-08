@@ -7,7 +7,7 @@ const Artur = () => {
     useEffect(() => {
         const wartosc = ilosc
     },[ilosc])
-    return (<div style={{background: "#f9f9f9"}}><h1 className="green">Jestem Artur a tutaj wyyswietlimy sobie liczbe wyjeta z kontekstu z innego komponentu</h1><p>{ilosc}</p></div>)
+    return (<div style={{background: "#f9f9f9"}}>{ilosc}</div>)
 
 }
 
