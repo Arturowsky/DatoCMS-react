@@ -3,9 +3,9 @@ import { NavLink } from "react-router-dom";
 
 export default () => (
   <header className="Header-header">
-    <h1 className="Header-h1">nav</h1>
     
-    <nav className="Header-nav">
+    
+    {/* <nav className="Header-nav">
       <NavLink
         exact
         to="/"
@@ -28,6 +28,6 @@ export default () => (
       >
         Blog
       </NavLink>
-    </nav>
+    </nav> */}
   </header>
 );
