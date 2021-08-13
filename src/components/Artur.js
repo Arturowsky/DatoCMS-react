@@ -7,7 +7,7 @@ const Artur = () => {
     useEffect(() => {
         const wartosc = ilosc
     },[ilosc])
-    return (<div style={{background: "#f9f9f9"}}>{ilosc}</div>)
+    return (<div style={{background: "#f9f9f9"}}></div>)
 
 }
 
