@@ -1,36 +1,17 @@
 import React, {useContext} from "react";
 import { MojContext } from "./Context";
 import { NavLink } from "react-router-dom";
-import { useScrollPosition } from '@n8tb1t/use-scroll-position'
 // IMPORTS
 import "../scss/header.scss"
 import logo from "../assets/logo-nav.svg"
 import menu from "../assets/menu.svg"
 
 
-const Header = () => {
-  const [ilosc, setIlosc] = useContext(MojContext);
-  useScrollPosition(({ prevPos, currPos }) => {
-    // console.log(currPos.x)
-    // console.log(currPos.y)
-    // const scrolY = document.body.clientHeight;
-    // console.log(`document HEIGH ${scrolY}`)
-    // const posY = window.pageYOffset
-    // console.log(`window scrollY = ${posY}`)
-    // const percentage = posY / document.body.scrollHeight
-    // console.log(`percentage ${percentage}`)
-    let scrollTop = window.scrollY;
-  let docHeight = document.body.offsetHeight;
-  let winHeight = window.innerHeight;
-  let scrollPercent = scrollTop / (docHeight - winHeight);
-  let scrollPercentRounded = Math.round(scrollPercent * 100);
-    setIlosc(scrollPercentRounded)
-    console.log(`ilosc stanu ${ilosc}`)
-  })
-  return (
-    <header className="Header-header">
+export default () => (
+  
+  <header className="Header-header">
     
-    <div className="progress-indicator" style={{width: `${ilosc}%`}}></div>
+    <div className="progress-indicator" style={{width: `${10}%`}}></div>
     <nav className="Header-nav">
       <div><img src={logo} alt="Artur Lewandowicz" /></div>
       <div><NavLink
@@ -80,6 +61,4 @@ const Header = () => {
       
     </nav>
   </header>
-  )
-}
-export default Header;
+);
