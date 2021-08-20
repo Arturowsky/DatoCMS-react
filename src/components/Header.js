@@ -50,7 +50,7 @@ const Header = () => {
       </NavLink>
       <NavLink
         to="/oferta"
-        className="Header-navLink"
+        className="Header-navLink open-project"
         activeClassName="Header-isActive"
       >
         Oferta
@@ -79,6 +79,7 @@ const Header = () => {
       <div><img src={menu} alt="menu" /></div>
       
     </nav>
+    <div className="sub-menu" style={{width: "500px", height: "500px", background: "pink" }}></div>
   </header>
   )
 }

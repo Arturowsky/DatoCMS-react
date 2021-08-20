@@ -48,6 +48,14 @@
     // text-underline-position: under;
     // text-decoration: 3px underline skyblue;
 }
+.sub-menu {
+    display: none;
+}
+.open-project:hover {
+    .sub-menu {
+        display: block;
+    }
+}
 
 @media (max-width: 480px) {
     .progress-indicator {
