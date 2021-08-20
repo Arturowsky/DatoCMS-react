@@ -3,7 +3,6 @@
 
 // HEADER JS
 .progress-indicator {
-    
     height: 5px;
     background: linear-gradient(to right,#FF3E85, #5FC5C5);
 }
@@ -48,4 +47,18 @@
     padding: 5px 10px;
     // text-underline-position: under;
     // text-decoration: 3px underline skyblue;
+}
+
+@media (max-width: 480px) {
+    .progress-indicator {
+        display: none;
+    }
+    .Header-header {
+        width: 100vw;
+    }
+    .Header-nav {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }

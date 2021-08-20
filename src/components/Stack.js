@@ -17,7 +17,7 @@ import git from "../assets/git.svg"
 const Stack = () => {
   return (
     <div>
-      <div className="wave">
+      <div className="wave top-wave">
         <img src={waveTop} alt="" />
       </div>
       <div className="stack-bg">
@@ -31,7 +31,7 @@ const Stack = () => {
             </p>
             <img src={swirlyArrow} alt="Swirly Arrow" />
           </div>
-          <div>
+          <div className="stack-img">
             <img src={logosy} alt="Circle" />
           </div>
         </div>
@@ -79,7 +79,7 @@ const Stack = () => {
           
         </div>
       </div>
-      <div className="wave">
+      <div className="wave bottom-wave">
         <img src={waveBottom} alt="" />
       </div>
     </div>

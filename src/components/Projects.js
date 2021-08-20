@@ -9,13 +9,14 @@ import btnlist from "../assets/btn-list.svg"
 import divmaker from "../assets/divmaker.svg"
 import currencyapp from "../assets/currencyapp2.svg"
 import weatherapp from "../assets/weatherapp.svg"
+import backgroundSVG from "../assets/gbg.svg"
 import ol from "../assets/ol.png";
 import el from "../assets/el.png";
 const Projects = () => {
   return (
-    <div className="projects-container">
+    <div className="projects-container" style={{background: `url(${backgroundSVG})` }}>
       <div className="projects">
-        <div>
+        <div className="projects-grid">
           <img src={projects} alt="" />
           <h1>Wykonane projekty</h1>
           <p>

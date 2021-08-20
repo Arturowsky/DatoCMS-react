@@ -3,8 +3,6 @@
 
 .projects-container {
     width: $w-full;
-    
-
 }
 
 .projects {
@@ -61,5 +59,33 @@
         cursor: pointer;
         top: -2px;
         position: relative;
+    }
+}
+
+
+// MEDIA QUERIES
+@media (max-width: 480px) {
+    .projects-container {
+        width: 100vw;
+        
+    }
+    
+    .projects {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .projects-grid {
+        display: grid;
+        place-items: center;
+        h1, p {
+            text-align: center;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+    }
+    .projects-images {
+        padding: 20px;
     }
 }

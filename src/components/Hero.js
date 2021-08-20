@@ -11,9 +11,9 @@ const Hero = () => {
       <h1 className="my-name">
         artur<span>lewandowicz</span>
       </h1>
-      <p>Freelance front end developer 👋</p>
+      <p><span>👋</span>Freelance front end developer </p>
     </div>
-    <div>
+    <div className="hero-img">
       <img src={telefon} alt="tel" />
     </div>
   </div>)
